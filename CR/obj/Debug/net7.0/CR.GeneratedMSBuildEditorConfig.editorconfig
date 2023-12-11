@@ -13,10 +13,13 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CR
-build_property.ProjectDir = /home/student/RiderProjects/CR/CR/
+build_property.ProjectDir = C:\Users\andre\RiderProjects\CR\CR\
 
-[/home/student/RiderProjects/CR/CR/App.axaml]
+[C:/Users/andre/RiderProjects/CR/CR/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/student/RiderProjects/CR/CR/Views/MainWindow.axaml]
+[C:/Users/andre/RiderProjects/CR/CR/Views/CooperationView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/andre/RiderProjects/CR/CR/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

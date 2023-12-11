@@ -1,0 +1,35 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:CR.ViewModels"
+             mc:Ignorable="d"
+             d:DesignWidth="800"
+             d:DesignHeight="450"
+             x:Class="CR.Views.CooperationView"
+             x:DataType="viewModels:CooperationViewModel">
+    <Design.DataContext>
+        <viewModels:CooperationViewModel />
+    </Design.DataContext>
+    <StackPanel>
+        <TextBox Name="CooperationSearch"
+                 Watermark="Start date"
+                 Width="200"
+                 TextChanged="CooperationSearch_OnTextChanged" />
+        <DataGrid Name="CooperationDataGrid"
+                  Width="950"
+                  Height="600"
+                  HorizontalAlignment="Left"
+                  IsReadOnly="True"
+                  ItemsSource="{Binding Cooperation}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Header="ID" Binding="{Binding ID}" />
+                <DataGridTextColumn Width="*" Header="Form" Binding="{Binding Form}" />
+                <DataGridTextColumn Width="*" Header="Start date"
+                                    Binding="{Binding StartDate, StringFormat=dd.MM.yyyy}" />
+                <DataGridTextColumn Width="*" Header="Teacher full name" Binding="{Binding Teacher}" />
+                <DataGridTextColumn Width="*" Header="Parent full name" Binding="{Binding Parent}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</UserControl>
